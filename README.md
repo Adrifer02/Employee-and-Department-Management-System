@@ -12,7 +12,7 @@ This project showcases the use of PL/SQL in Oracle for managing employees and de
 * Oracle Database
 * SQL and PL/SQL
 
-# Database Structure
+# SQL Structure
 
 Here is the SQL script to create the structure of the database used in this project:
 
@@ -40,6 +40,10 @@ VALUES (1, 'Juan', 'Pérez', TO_DATE('2020-01-15', 'YYYY-MM-DD'), 2500.00);
 -- Insert data into Departments
 INSERT INTO departamentos(departamento_id, nombre, ubicacion)
 VALUES (1, 'Recursos Humanos', 'Madrid');
-```sql
+```
+# Explanation:
+In this section, we created two tables: empleados (employees) and departamentos (departments), representing employees and their respective departments. We also inserted sample data into both tables.
+
+
 
 
