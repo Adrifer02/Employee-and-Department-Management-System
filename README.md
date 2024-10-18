@@ -41,21 +41,43 @@ VALUES (1, 'Juan', 'Pérez', TO_DATE('2020-01-15', 'YYYY-MM-DD'), 2500.00);
 INSERT INTO departamentos(departamento_id, nombre, ubicacion)
 VALUES (1, 'Recursos Humanos', 'Madrid');
 
--- Query Data from Tables
--- Query all employees
-SELECT * FROM employees;
+-- Updating employee salary using the UPDATE statement
+UPDATE empleados
+SET salario = salario + 200
+WHERE empleado_id = 1;
 
--- Query all departments
-SELECT * FROM departments;
+-- Deleting an employee using DELETE statement
+DELETE FROM empleados
+WHERE empleado_id = 3;
 
+-- Grouping employees by department and calculating average salary using GROUP BY
+SELECT d.nombre AS departamento, AVG(e.salario) AS salario_promedio
+FROM empleados e
+JOIN departamentos d ON e.departamento_id = d.departamento_id
+GROUP BY d.nombre;
+
+-- Using SET to update multiple columns in one statement
+UPDATE empleados
+SET nombre = 'Ana María', salario = 3200
+WHERE empleado_id = 2;
+
+-- Retrieve data with a WHERE clause
+SELECT * FROM empleados
+WHERE salario > 2500;
+
+-- Use ORDER BY to sort data
+SELECT * FROM empleados
+ORDER BY fecha_contratacion DESC;
+
+-- Use a JOIN to combine data from two tables
+SELECT e.nombre, e.apellido, d.nombre AS departamento
+FROM empleados e
+JOIN departamentos d ON e.departamento_id = d.departamento_id;
 ```
-# Explanation:
-In this section, we created two tables: empleados (employees) and departamentos (departments), representing employees and their respective departments. We also inserted sample data into both tables.
 
-# Expected Results
-* A table employees containing four entries for different employees with respective hire dates and salaries.
-* A table departments with three entries for various departments located in different cities.
-* Queries will return a list of employees and departments when executed.
+# Conclusion:
+This project aims to demonstrate basic SQL functionality such as CREATE TABLE, as well as data manipulation (INSERT, UPDATE, DELETE), data retrieval with filtering and sorting (WHERE, ORDER BY) and more complex queries that combine data from multiple tables (JOIN, GROUP BY). It highlights how SQL can be used for effective data management in a relational database system such as Oracle.
+
 
 
 
