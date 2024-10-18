@@ -40,7 +40,6 @@ VALUES (1, 'Juan', 'Pérez', TO_DATE('2020-01-15', 'YYYY-MM-DD'), 2500.00);
 -- Insert data into Departments
 INSERT INTO departamentos(departamento_id, nombre, ubicacion)
 VALUES (1, 'Recursos Humanos', 'Madrid');
-
 ```sql
 
-This code creates the basic structure of our database with two tables: empleados (employees) and departamentos (departments), and inserts initial records into them.
+
