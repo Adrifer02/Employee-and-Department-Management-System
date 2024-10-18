@@ -1,18 +1,18 @@
 # Employee and Department Management System
-# Project Description
+## Project Description
 This project showcases the use of PL/SQL in Oracle for managing employees and departments within a company. It includes the creation of two main tables—employees and departments—as well as SQL queries to insert and retrieve data. Additionally, basic database operations such as table creation, data insertion, and querying are demonstrated. This project serves as a practical portfolio example for SQL and PL/SQL skills.
 
-# Project Objectives
+### Project Objectives
 * Create tables for managing employees and departments.
 * Insert, retrieve, and manipulate data using SQL queries.
 * Show the use of SQL in a business context.
 * Highlight basic database operations using Oracle PL/SQL.
 
-# Technologies Used
+### Technologies Used
 * Oracle Database
 * SQL and PL/SQL
 
-# SQL Structure
+## SQL Structure
 
 Here is the SQL script to create the structure of the database used in this project:
 
@@ -75,7 +75,7 @@ FROM empleados e
 JOIN departamentos d ON e.departamento_id = d.departamento_id;
 ```
 
-# Conclusion:
+## Conclusion:
 This project aims to demonstrate basic SQL functionality such as CREATE TABLE, as well as data manipulation (INSERT, UPDATE, DELETE), data retrieval with filtering and sorting (WHERE, ORDER BY) and more complex queries that combine data from multiple tables (JOIN, GROUP BY). It highlights how SQL can be used for effective data management in a relational database system such as Oracle.
 
 
