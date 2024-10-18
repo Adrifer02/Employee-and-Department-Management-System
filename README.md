@@ -40,10 +40,22 @@ VALUES (1, 'Juan', 'Pérez', TO_DATE('2020-01-15', 'YYYY-MM-DD'), 2500.00);
 -- Insert data into Departments
 INSERT INTO departamentos(departamento_id, nombre, ubicacion)
 VALUES (1, 'Recursos Humanos', 'Madrid');
+
+-- Query Data from Tables
+-- Query all employees
+SELECT * FROM employees;
+
+-- Query all departments
+SELECT * FROM departments;
+
 ```
 # Explanation:
 In this section, we created two tables: empleados (employees) and departamentos (departments), representing employees and their respective departments. We also inserted sample data into both tables.
 
+# Expected Results
+* A table employees containing four entries for different employees with respective hire dates and salaries.
+* A table departments with three entries for various departments located in different cities.
+* Queries will return a list of employees and departments when executed.
 
 
 
